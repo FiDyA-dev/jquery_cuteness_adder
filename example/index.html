@@ -8,12 +8,69 @@
 </head>
 <body>
     <div class="container">
-        <div class="some-block bg_blue"></div>
-        <div class="some-block bg_black"></div>
-        <div class="scroll-block">
-            <div class="some-block bg_red"></div>
+        <div class="example">
+            <h2>Example 1</h2>
+            <ul>
+                <li>Sprite: random</li>
+                <li>Color: random</li>
+            </ul>
+
+            <xmp>$('.bg_yellow').addCuteness();</xmp>
+
+            <div class="some-block bg_yellow"></div>
         </div>
-        <div class="some-block bg_green"></div>
+
+        <hr />
+
+        <div class="example">
+            <h2>Example 2</h2>
+            <ul>
+                <li>Sprite: cat</li>
+                <li>Color: #000000</li>
+            </ul>
+            <xmp>$('.bg_blue').addCuteness({
+    color: '#000000',
+    sprite: 'cat'
+});</xmp>
+
+            <div class="some-block bg_blue"></div>
+        </div>
+
+        <hr />
+
+        <div class="example">
+            <h2>Example 3</h2>
+            <ul>
+                <li>Sprite: dino</li>
+                <li>Color: #ffffff</li>
+            </ul>
+            <xmp>$('.bg_black').addCuteness({
+    color: '#ffffff',
+    sprite: 'dino'
+});</xmp>
+
+            <div class="some-block bg_black"></div>
+        </div>
+
+        <hr />
+
+        <div class="example">
+            <h2>Example 4</h2>
+            <ul>
+                <li>Sprite: dog</li>
+                <li>Color: #2d7aa4</li>
+            </ul>
+            <xmp>$('.bg_red, .bg_green').addCuteness({
+    color: '#2d7aa4',
+    sprite: 'dog',
+});</xmp>
+
+            <div class="scroll-block">
+                <div class="some-block bg_red"></div>
+            </div>
+
+            <div class="some-block bg_green"></div>
+        </div>
     </div>
 </body>
 <script src="js/jquery.3.6.3.min.js"></script>
@@ -21,10 +78,20 @@
 
 <script>
      $('document').ready(function() {
-         $('.some-block').addCuteness({
-             speed: 3, //int; default: 3
-             color: 'rnd', //color like: '#0F129E'; default: 'random'
-             sprite: 'rnd', //['cat', 'dog', 'dino']; default: 'random'
+         $('.bg_yellow').addCuteness();
+         $('.bg_blue').addCuteness({
+             color: '#000000', //color like: '#0F129E'; default: 'random'
+             sprite: 'cat', //['cat', 'dog', 'dino']; default: 'random'
+         });
+
+         $('.bg_black').addCuteness({
+             color: '#ffffff',
+             sprite: 'dino',
+         });
+
+         $('.bg_red, .bg_green').addCuteness({
+             color: '#2d7aa4',
+             sprite: 'dog',
          });
      });
 </script>

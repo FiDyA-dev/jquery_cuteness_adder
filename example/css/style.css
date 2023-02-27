@@ -2,50 +2,72 @@
     box-sizing: border-box;
 }
 
+h2 {
+    color: #635d91;
+    font-size: 38px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
 .container {
     max-width: 1220px;
     padding: 20px 10px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+xmp {
+    background: #eaeaea;
+    padding: 15px 20px;
+    border-left: solid 2px #939393;
 }
 
 .some-block {
     width: 100%;
-    max-width: 500px;
-    height: 320px;
-    margin: 10px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.bg_yellow {
+    background: rgba(255, 234, 0, 0.4);
+    border: 2px solid #7a4f00;
 }
 
 .bg_blue {
-    background: #5694cc33;
+    background: #5694cc44;
     border: 2px solid #2a5073;
 }
 
 .bg_black {
-    background: #00000033;
+    background: #000000bb;
     border: 2px solid #2a5073;
 }
 
 .bg_green {
-    background: #56cc9b33;
+    background: #56cc9b44;
     border: 2px solid #2a7340;
 }
 
 .scroll-block {
-    height: 320px;
+    height: 200px;
     overflow: auto;
     width: 100%;
-    max-width: 500px;
     border: 2px solid #2a5073;
-    margin: 10px;
+    margin-bottom: 40px;
 }
 
 .some-block.bg_red {
-    background: #cc565633;
-    height: 700px;
-    max-width: none;
+    background: #cc565644;
+    height: 400px;
     margin: 0;
     border: 0;
 }
