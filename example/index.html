@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="some-block bg_blue"></div>
+        <div class="some-block bg_black"></div>
+        <div class="scroll-block">
+            <div class="some-block bg_red"></div>
+        </div>
+        <div class="some-block bg_green"></div>
+    </div>
+</body>
+<script src="js/jquery.3.6.3.min.js"></script>
+    <script src="../lib/jquery_cuteness_adder/jquery_cuteness_adder.min.js"></script>
+
+<script>
+     $('document').ready(function() {
+         $('.some-block').addCuteness({
+             speed: 3, //int; default: 3
+             color: 'rnd', //color like: '#0F129E'; default: 'random'
+             sprite: 'rnd', //['cat', 'dog', 'dino']; default: 'random'
+         });
+     });
+</script>
+
+</html>
